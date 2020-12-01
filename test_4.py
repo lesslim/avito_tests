@@ -1,5 +1,5 @@
-import pytest
-from one_hot_encoder import fit_transform
+import pytest  # type: ignore
+from one_hot_encoder import fit_transform  # type: ignore
 
 
 def test_list():

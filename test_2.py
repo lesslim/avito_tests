@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import pytest
+import pytest # type: ignore
 from morse import decode
 
 
