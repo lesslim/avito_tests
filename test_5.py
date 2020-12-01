@@ -8,19 +8,6 @@ import io
 class TestWhatIsYearNow(unittest.TestCase):
     """Класс для тестирования what_is_year_now из what_is_year_now.py."""
 
-    def test_year_now(self):
-        """Проверка текущего года."""
-        actual = what_is_year_now()
-        expected = 2020
-        self.assertEqual(actual, expected)
-
-    def test_wrong_year(self):
-        """Проверка на ошибку прошлого года."""
-        actual = what_is_year_now()
-        expected = 2019
-        with self.assertRaises(AssertionError):
-            self.assertEqual(actual, expected)
-
     def test_dash(self):
         """Проверка на дату в формате 'YYYY-MM-DD'."""
         dict_json = '{"currentDateTime": "2020-12-01"}'
